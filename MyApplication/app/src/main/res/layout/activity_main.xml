@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/iv_switch"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/icon_button_off" />
+
+
+    <LinearLayout
+        android:id="@+id/ll_gra"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/iv_switch"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_graphview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/ll_graphview_point"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/ll_graphview_bar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_gra"
+        android:background="@android:color/darker_gray"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/et_encrypty"
+            android:layout_width="200dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_mydialog" />
+
+        <Button
+            android:id="@+id/btn_encode"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_dialog_ok"
+            android:text="加密" />
+
+        <Button
+            android:id="@+id/btn_decode"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/selector_dialog_ok"
+            android:text="解密" />
+    </LinearLayout>
+
+
+    <ToggleButton
+        android:id="@+id/tb_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="关"
+        android:textOn="开" />
+
+    <CheckBox
+        android:id="@+id/cb_main"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" />
+
+    <Button
+        android:id="@+id/btn_to_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:text="第二页" />
+
+    <EditText
+        android:id="@+id/et_input_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_switch"
+        android:layout_margin="5dp"
+        android:hint="请输入数字获取斐波拉契"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_digui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_input_num"
+        android:text="递归" />
+
+    <TextView
+        android:id="@+id/tv_num_display"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@+id/et_input_num"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/btn_digui"
+        android:minWidth="50dp"
+        android:textColor="@color/green" />
+
+    <EditText
+        android:id="@+id/et_input_dsplay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_num_display"
+        android:hint="输入"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_px2dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_digui"
+        android:layout_toRightOf="@+id/et_input_dsplay"
+        android:text="px转dp" />
+
+    <Button
+        android:id="@+id/btn_dp2px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_digui"
+        android:layout_toRightOf="@+id/btn_px2dp"
+        android:text="dp转px" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn_digui"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/btn_dp2px"
+        android:gravity="center"
+        android:textColor="@color/green" />
+
+</RelativeLayout>
