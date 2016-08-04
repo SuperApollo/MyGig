@@ -84,6 +84,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             }
         }
     };
+    private Button btn_to_fgactivity;
 
 
     @Override
@@ -217,6 +218,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btn_encode = (Button) findViewById(R.id.btn_encode);
         btn_decode = (Button) findViewById(R.id.btn_decode);
         et_encrypty = (EditText) findViewById(R.id.et_encrypty);
+        btn_to_fgactivity = (Button) findViewById(R.id.btn_to_fgactivity);
 
         iv_switch.setOnClickListener(this);
         tb_switch.setOnClickListener(this);
@@ -226,6 +228,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         btn_dp2px.setOnClickListener(this);
         btn_encode.setOnClickListener(this);
         btn_decode.setOnClickListener(this);
+        btn_to_fgactivity.setOnClickListener(this);
 
         cb_main.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -344,6 +347,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
                     return;
                 }
 
+                break;
+            case R.id.btn_to_fgactivity:
+                Intent it = new Intent(this, BaseActivity.class);
+                startActivity(it);
                 break;
         }
     }
