@@ -12,6 +12,7 @@
             <option value="$PROJECT_DIR$/GraphView-master" />
             <option value="$PROJECT_DIR$/ToggleButtonLib" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/okhttputils" />
           </set>
         </option>
       </GradleProjectSettings>

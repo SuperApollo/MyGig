@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/holo_orange_dark"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_first"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_dog"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="测试1"
+            android:textColor="@android:color/black" />
+        <RadioButton
+            android:id="@+id/rb_second"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableTop="@drawable/icon_dog"
+            android:gravity="center_horizontal|bottom"
+            android:paddingTop="2dp"
+            android:text="测试1"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+</RelativeLayout>
