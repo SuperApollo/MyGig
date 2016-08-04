@@ -8,6 +8,9 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 
 import com.example.administrator.myapplication.Fragment.FirstFragment;
+import com.example.administrator.myapplication.Fragment.FouthFragment;
+import com.example.administrator.myapplication.Fragment.SecondFragment;
+import com.example.administrator.myapplication.Fragment.ThirdFragment;
 import com.example.administrator.myapplication.R;
 import com.example.administrator.myapplication.Utils.FragmentUtil;
 
@@ -59,16 +62,19 @@ public class BaseActivity extends FragmentActivity implements View.OnClickListen
         switch (v.getId()) {
             case R.id.rb_first:
                 setChecked(rb_first);
-
+                FragmentUtil.replace(this, R.id.fg_container, new FirstFragment());
                 break;
             case R.id.rb_second:
-
+                setChecked(rb_second);
+                FragmentUtil.replace(this, R.id.fg_container, new SecondFragment());
                 break;
             case R.id.rb_third:
-
+                setChecked(rb_third);
+                FragmentUtil.replace(this, R.id.fg_container, new ThirdFragment());
                 break;
             case R.id.rb_fouth:
-
+                setChecked(rb_fouth);
+                FragmentUtil.replace(this, R.id.fg_container, new FouthFragment());
                 break;
 
         }
